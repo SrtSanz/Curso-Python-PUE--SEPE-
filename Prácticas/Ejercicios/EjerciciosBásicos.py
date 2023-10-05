@@ -57,20 +57,24 @@ print(cadena[10:0:-1])
 num = range(10)
 print(num)
 
-#12. Pide dos cadenas por teclado, muestra ambas cadenas con un espacio entre ellas y con los 2 primeros caracteres intercambiados. Por ejemplo, hola mundo pasaría a mula hondo
+#12. Pide dos cadenas por teclado, muestra ambas cadenas con un espacio entre ellas y
+#con los 2 primeros caracteres intercambiados. Por ejemplo, hola mundo pasaría a mula hondo
 
-primerapeticion = "Dame una palabrita "
-input(primerapeticion)
-print(type(primerapeticion))
+print("¿Me dices Hola?")
+palabra1 = input()
+print("Me dices mundo")
+palabra2 = input()
 
-segundapetición = "Dame otra palabrita "
-print(input(segundapetición))
-print(type(segundapetición))
+print("Ahora voy a hacer magia con tus palabaras")
 
-resultado = (primerapeticion + segundapetición)
+resultado = (palabra1[0:2:1]+ palabra2[2:4:1] + " " + palabra1[0:2:1]+ palabra2[2:5:1])
 print(resultado)
 
-#13. Juguemos al juego de adivinar el numero, generaremos un número entre 1 y 100. Nuestro objetivo es adivinar el número. Si fallamos nos dirán si es mayor o menor que el número buscado. También poner el número de intentos requeridos.
+#13. Juguemos al juego de adivinar el numero, generaremos un número entre 1 y 100.
+#Nuestro objetivo es adivinar el número. Si fallamos nos dirán si es mayor o menor que el número buscado.
+#También poner el número de intentos requeridos.
+
+
 #14. Escribir un programa que guarde en una variable el diccionario {'Euro':'€', 'Dollar':'$','Yen':'¥'}, pregunte al usuario por una divisa y muestre su símbolo o un mensaje de aviso si la divisa no está en el diccionario.
 
 divisas = {'Euro': '€', 'Dollar': '$', 'Yen': '¥'}
