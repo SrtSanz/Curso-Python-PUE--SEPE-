@@ -18,48 +18,95 @@ print(precio_total)
 
 #4. De dos números, saber cual es el mayor.
 
+num1 = 3
+num2 = 9
 
+if num1 > num2:
+    print("numero 1 es mayhor")
+elif num1
 
 #5. Crea una variable numérica y si esta entre 0 y 10, mostrar un mensaje indicándolo.
 
 variable = 5
-if variable > 0 or variable <  10:
+if variable >= 0 or variable <=  10:
     
     print("Perfecto")
+
+num = 7
+
+if(0 <= num <= 10)
+print("El numero está entre 0 y 10")
+
 
 #6. Mostrar con un while los números del 1 al 100.
 while  False:
     numero = 10
     print(numero)
 
+------------------------------------------
+
+num = 1
+while num<= 100:
+    print(num)
+    num = num +1
+else:
+    print(num)
+
+
 #7. Mostrar con un for los números del 1 al 100.
 for num in range(101):
     print(num)
 
+
+
 #8. Mostrar los números pares entre 1 al 100.
-for par in range(0,101,2):
+
+#op1
+for par in range(2,101,2):
     print(par)
+
+#op2
+for par in range(1,101):
+    if par % 2 == 0:
+        print(par)
+
+#op3
+lista = [par for par in range(1,101) if numero % 2 ==0]
+print(list(lista))
+
+#op4
+print(list(range(2,101,2)))
 
 #9. Mostrar los caracteres de la cadena “Hola mundo”.
 
+#op1
 cadena = "Hola Mundo"
 
 print(cadena[0:10:1])
 
+#op2
+for letra in "Hola mundo":
+    print(letra)
+
+#op3
+print(list("Hola Mundo"))
+print("\n".join(list("Hola mundo")))
 #10. Mostrar los caracteres de la cadena “Hola mundo” al reves
 
 cadena = "Hola Mundo"
 
 print(cadena[10:0:-1])
 
+
 #11. Generar un rango entre 0 y 10
 
-num = range(10)
-print(num)
+range(11)
+print(list(num))
 
 #12. Pide dos cadenas por teclado, muestra ambas cadenas con un espacio entre ellas y
 #con los 2 primeros caracteres intercambiados. Por ejemplo, hola mundo pasaría a mula hondo
 
+#op1
 print("¿Me dices Hola?")
 palabra1 = input()
 print("Me dices mundo")
@@ -70,9 +117,21 @@ print("Ahora voy a hacer magia con tus palabaras")
 resultado = (palabra1[0:2:1]+ palabra2[2:4:1] + " " + palabra1[0:2:1]+ palabra2[2:5:1])
 print(resultado)
 
+#op2
+cadena1 = 5
+
 #13. Juguemos al juego de adivinar el numero, generaremos un número entre 1 y 100.
 #Nuestro objetivo es adivinar el número. Si fallamos nos dirán si es mayor o menor que el número buscado.
 #También poner el número de intentos requeridos.
+
+num = 67
+intentos
+prop = int(input("Dime un número"))
+
+if num ==prop:
+    print("Has acertado!")
+elif prop > num:
+    print("")
 
 
 #14. Escribir un programa que guarde en una variable el diccionario {'Euro':'€', 'Dollar':'$','Yen':'¥'}, pregunte al usuario por una divisa y muestre su símbolo o un mensaje de aviso si la divisa no está en el diccionario.

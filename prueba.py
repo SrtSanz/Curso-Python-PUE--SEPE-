@@ -9,13 +9,13 @@ num = 26
 print("Venga, dame un número")
 prop = int(input())
 
-while prop == num:
+while prop < num:
     print ("Perfecto! Has ganado!")
 
     if prop < num:
         print("Lo siento, prueba con un número más alto")
         prop = int(input())
 
-    if prop > num:
+    elif prop > num:
         print("Lo siento, prueba con un número más bajo")
         prop = int(input())
