@@ -1,10 +1,10 @@
-#Esto es un comentario, es una linea que el imtrprete ignora
+#Esto es un comentario, es una linea que el intérprete ignora
 #se usa habitualmente para dejar notas en el codigo
 #Creacion de variables
 #identificador = valor
 valor = 10
 
-#En python los identificadores tienen ciertas eglas
+#En python los identificadores tienen ciertas reglas:
 # solo pueden tener letras, numeros y "_"
 # solo pueden empezar por letras y "_", no por numeros
 variable = 10
@@ -18,15 +18,15 @@ $variable = 10
 variable! = 10
 
 #Python es un lenguaje tipado o no tipado?
-#Python es un lenguaje FUERTEMENTE TIPADO, todas las variables en Python tiene un tipo
+#Python es un lenguaje FUERTEMENTE TIPADO, todas las variables en Python tienen un tipo
 #Lo que sucede es que nosotros NO le asignamos el tipo a las variables sino que es python
 #automaticamente lo hace por nosotros, esto se llama DuckTyping
 valor = 10
-#en python tenemos una funcion print() que imprime lo que recibe como argumento
+#En python tenemos la función print(), que imprime lo que recibe como argumento.
 print("Hola Mundo")
 
-#Ademas de la funcion print tenemos otra funcion que es type() que devuelve el tipo de dato
-#de una variable que le pasemos como argumento
+#Además de la funcion print tenemos otra función que es type() que devuelve el tipo de dato
+#de la variable que le pasemos como argumento.
 numero = 10
 print(type(numero))
 print(numero)
@@ -38,9 +38,9 @@ print(type(numero))
 print(numero)
 
 #Caracteristicas
-#Estan pensados para enteros tantos positivos como negativos
-#Rango, es los numeros comprendidos entre el mas alto y mas bajo que podemos representar
-#No hay limite entorno al valor maximo ni minimo, depende de la arquitectura y del interprete
+#Estan pensados para enteros tantos positivos como negativos.
+#El Rango, son los numeros comprendidos entre el más alto y más bajo que podemos representar.
+#No hay limite entorno al valor máximo ni mínimo, depende de la arquitectura y del intérprete.
 numero = 9121929128947957948279452798345793475894537945794573475354897534897345897345897934857349793485798354798534798347598345798534082133201932109832108321987349745298742943728934729834724328098432084320840938279847972347432947389237489327943798342798437439287438927342
 print(type(numero))
 print(numero)
