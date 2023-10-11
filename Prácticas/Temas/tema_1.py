@@ -57,25 +57,26 @@ print(binario)
 # 0b101 = 1 + 0 + 1
 #Segundo paso multiplicamos cada cifra por la base (en este caso es 2)
 # 0b101 = 1 * 2 + 0 * 2 + 1 * 2
-#Tercer Paso, elevo cada base a la potencia determinada por su posicion empezando en 0 de derecha a izquierda
+#Tercer Paso, elevo cada base a la potencia determinada por su posicion empezando en 0
+# de derecha a izquierda
 # 0b101 = 1 * 2^2 + 0 * 2^1 + 1 * 2^0
-#Ultimo paso hacemos la cuenta
+#Último paso hacemos la cuenta
 # 0b101 = 1 * 4 + 0 * 2 + 1 * 1 = 4 + 0 + 1 = 5
 #Octal que es base 8, tenemos desde el 0 al 7
-#se idica con u 0o
+#se idica con un 0o
 octal = 0o101
 print(type(octal))
 print(octal)
-#PAra la conversion es igual que con binario solo que cambiamos la base 2 por una base 8
+#Para la conversion es igual que con binario sólo que cambiamos la base 2 por una base 8
 #separo cifras y sumo
 # 0o101 = 1 + 0 + 1
 #Multipplico por la base
 # 0o101 = 1 * 8 + 0 * 8 + 1 * 8
 #Elevamos a la poyencia
 # 0o101 = 1 * 8^2 + 0 * 8^1 + 1 * 8^0
-#HAcemos la cuenta
+#Hacemos la cuenta
 # 0o101 = 64 + 0 + 1  = 65
-#Hecadecimal, que tenemos 16 simbolos del 0 al 9 y de la A a la F
+#Hexadecimal, que tenemos 16 símbolos del 0 al 9 y de la A a la F
 #se indica poniendo un 0x al principio
 hexadecimal = 0x101
 print(type(hexadecimal))
@@ -92,16 +93,16 @@ print(flotante)
 
 #Caracteristicas
 #Rango
-#La precision maxima es de 17 difgitos, corta la salida y NO avisa
+#La precisión máxima es de 17 difgitos, corta la salida y NO avisa
 flotante = 1.27868236871364364832764527862445876476453734598345784538893457932809438934028093428430284320834203820438082348432098342038420342803492830249823508052489
 print(type(flotante))
 print(flotante)
 
-#admite notacion cientifica
-flotante = 1.23e3 #es mltiplicar por 10 elevado a la potencia que viene despues de la e es decir 3
+#admite notación científica
+flotante = 1.23e3 #es mltiplicar por 10 elevado a la potencia que viene después de la e es decir 3
 print(type(flotante))
 print(flotante)
-#puede ser negativo en ese caso es cmo dividir
+#puede ser negativo en ese caso es como dividir.
 flotante = 1.23e-3
 print(type(flotante))
 print(flotante)
@@ -118,7 +119,8 @@ print(type(complejo))
 print(complejo)
 
 #Booleanos que son aquellos que pueden ser verdadero (True) o falso (False)
-verdadero = True #Python es case sensitive es decir diferencia mayuscualas de minusculas true no es igual que True
+verdadero = True #Python es case sensitive es decir diferencia mayúscualas de minúsculas
+                 #true no es igual que True
 print(type(verdadero))
 print(verdadero)
 
@@ -126,19 +128,19 @@ falso = False
 print(type(falso))
 print(falso)
 
-# Python dentro de los tipos de datos los clasifia de dos formas
-# INMUTABLES, son aquellos que no se pueden modificar una vez creados
-# MUTABLES, son aquellos que si se pueden modificar una vez creados
+# Python dentro de los tipos de datos los clasifia de dos formas:
+# INMUTABLES, son aquellos que no se pueden modificar una vez creados.
+# MUTABLES, son aquellos que si se pueden modificar una vez creados.
 
-#INMUTABLES => enteros, flotantes, complejos, tuplas, string, booleanos
-#MUTABLES => listas, diccionarios y conjuntos
+#INMUTABLES => enteros, flotantes, complejos, tuplas, string, booleanos.
+#MUTABLES => listas, diccionarios y conjuntos.
 
 entero = 100
 print(entero)
 entero = 500
 print(entero)
 
-#Tenemos una funcion id() que devuelve el identificador unico de una variable en python
+#Tenemos una funcion id() que devuelve el identificador único de una variable en python
 entero = 100
 print(id(entero))
 entero = 500
@@ -160,7 +162,7 @@ print(id(entero_2))
 
 #Strings
 #Los strings son un conjunto de caracteres
-#en python no existe el tipo char, sino que es un string d elongitud 1
+#en python no existe el tipo char, sino que es un string de longitud 1
 #los strings en python son INMUTABLES
 #Tenemos 4 formas de declarar strings en python
 #Comillas dobles
@@ -188,7 +190,7 @@ esto es un comentario
 """
 
 #Si hay diferencia entre las versiones simples (dobles y sencillas) y las tripes(dobles y sencillas)
-#LAs triples habilitan la sintaxis Heredoc, que es una sintaxis que te permite literales (multilinea)
+#Las triples habilitan la sintaxis Heredoc, que es una sintaxis que te permite literales (multilinea)
 
 cadena = "Hola
 que 
