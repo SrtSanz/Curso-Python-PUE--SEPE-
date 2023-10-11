@@ -1,2 +1,3 @@
-print(1.1 + 1.2)
-print(0.1 + 0.1 + 0.1 - 0.3 )
+complejo = 4 + 5j
+print(type(complejo))
+print(complejo)
