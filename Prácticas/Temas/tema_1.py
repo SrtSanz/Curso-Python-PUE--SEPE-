@@ -47,8 +47,8 @@ print(numero)
 
 #Por defecto trabajamos en base decimal (0-9)
 #python soporta otras bases
-#Binario que solo tenemos dos simbolos 0 y 1 por consiguiente es base 2
-#para indicar que un numero es binarioen python le ponemos 0b delante
+#Binario que sólo tenemos dos símbolos 0 y 1 por consiguiente es base 2
+#para indicar que un numero es binario en python le ponemos 0b delante
 binario = 0b101
 print(type(binario))
 print(binario)
