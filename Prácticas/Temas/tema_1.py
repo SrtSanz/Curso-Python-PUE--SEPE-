@@ -285,25 +285,24 @@ print(cadena[-1:-11:-1]) #STEPS negativos cuenta de atrás hacia adelante (invie
 print(cadena[-5:-11:-1]) #M aloH
 print(cadena[5:-1:-1]) #cadena vacía
 print(cadena[5:-1:1]) #Mund
-print(cadena[5:9:1])
 
-#Tambien tenemos funciones que se le pueden aplciar a los string
-#len() que nos devuelve la longtud de la cadena
+#También tenemos funciones que se le pueden aplciar a los string
+#len() que nos devuelve la longtud de la cadena.
 cadena = "Hola Mundo"
 print(len(cadena))
-#Tenemos 2 funciones mas que SOLO se pueden utilizar con strings de longitud uno "letras" sueltas
+#Tenemos 2 funciones más que SÓLO se pueden utilizar con strings de longitud uno "letras" sueltas
 # ord(), le pasamos un caracter y nos devuelve su codigo ascii asociado
 print(ord("a"))
 # chr(), pasando un codigo ascii, nos devuelve la letra asociada
 print(chr(65))
 
 #Operadores
-#Aritmeticos, logicos y binarios
-#Aritmeticos
+#Aritméticos, lógicos y binarios
+#Aritméticos
 print(1 + 2) #suma
 print(1 - 2) #resta
-print(1 * 2) #mnultplacion
-print(1 / 2) #division
+print(1 * 2) #multiplación
+print(1 / 2) #división
 print(1 ** 2) #potencia
 print(1 % 2) #modulo, esto es el resto de la division entera
 print(1 // 2) #cociente de la division entera
