@@ -207,47 +207,47 @@ print(cadena)
 cadena = "Hola\nque\ntal"
 print(cadena)
 
-#Podemos acceder a cada letra por su pocicion comenzando en 0y usando []
+#Podemos acceder a cada letra por su pocición comenzando en 0 y usando []
 cadena = "Hola Mundo"
 print(cadena[0])
 print(cadena[1])
 print(cadena[2])
-#Ojola posicion debe existir sino error
+#Ojo la posicion debe existir sino error
 print(cadena[20])
 
-#Son inutables, NO se pueden cambiar letras sueltas o toda la cadena o nada
+#Son inmutables, NO se pueden cambiar letras sueltas o toda la cadena o nada
 cadena = "Hola Mundo"
 cadena[0] = "h"
 print(cadena)
 
-#Los string soportan el operador +, en este caso concatenaria cadenas es decir las junta
+#Los string soportan el operador +, en este caso concatenaría cadenas, es decir, las junta.
 cadena_1 = "hola"
 cadena_2 = " mundo"
 cadena_3 = cadena_1 + cadena_2
 print(cadena_3)
 
-#Tambien soporta el operador *, que seusa con un strring y un entero
+#También soporta el operador *, que se usa con un string y un entero
 cadena_1 = "hola"
 cadena_2 = 10 * cadena_1
 print(cadena_2)
 
-#Son objetos y tienen metodos y tambien funciones que se le aplican
-# la primera es len() que nosdevuelve la longitud
+#Son objetos y tienen métodos y también funciones que se le aplican
+# la primera es len() que nos devuelve la longitud.
 cadena = "hola mundo"
 print(len(cadena))
 
-#luego tenemos multitud de metodos, que devuelven copias modificadas
+#luego tenemos multitud de métodos, que devuelven copias modificadas
 cadena = "hola Mundo"
 #tenemos de formato
-#lower() lo cambia a minusculas
+#lower() lo cambia a minúsculas
 print(cadena.lower())
-#upper() a mayuculas
+#upper() a mayúsculas
 print(cadena.upper())
-#capitalize(), pone solo la primera letra en mayusulas
+#capitalize(), pone sólo la primera letra en mayúsculas
 print(cadena.capitalize())
 
-#Tenemos metodos de comprobacion que empiezan por is
-#sirven para comprobr si una cadena cumple algo devuelven verdero o falso
+#Tenemos métodos de comprobacion que empiezan por is.
+#Sirven para comprobr si una cadena cumple algo devuelven verdero o falso
 # isupper(), islower(), isdigit(), isalpha(), isnumeric()...
 cadena = "hola Mundo"
 print(cadena.isupper())
@@ -255,36 +255,37 @@ print(cadena.islower())
 print(cadena.isnumeric())
 
 #Tenemos que soportan slicing, que es una forma de obtener subconjuntos de datos de un tipo compuesto (strings, tuplas, listas)
-#en el caso de los strings nos devueven substrings
+#En el caso de los strings nos devueven substrings
 # cadena[POS_INI:POS_FIN:STEP]
-#POS_INI, es la posicion de inicio del subconjutno por defecto es 0
-#POS_FINAL, es la posicion final del subconjunto, OJO no se incluye en el resyltado asi que en realidad
-# es POS_FINAL - 1, y su valor por defecto es la longitud de la cadena
-#STEP, es el salto entre cada uno de los elementos del conjunto por defecto es 1
+#POS_INI, es la posición de inicio del subconjutno por defecto es 0
+#POS_FINAL, es la posicion final del subconjunto, OJO no se incluye en el resultado asi que en realidad
+# es POS_FINAL - 1, y su valor por defecto es la longitud de la cadena.
+#STEP, es el salto entre cada uno de los elementos del conjunto por defecto es 1.
 cadena = "Hola Mundo"
 print(cadena[0:10:1]) #copia todo
-print(cadena[0:10:2]) #Hl ud el steo hace que salte de dos en dos
+print(cadena[0:10:2]) #Hl ud el step hace que salte de dos en dos
 print(cadena[5:10:1]) #Mundo
 print(cadena[0:4:1]) #Hola
 
-#OJO NO comprueba los limites
+#OJO NO comprueba los límites
 cadena = "Hola Mundo"
-print(cadena[0:4:10000])#H la posicion del salto es mas grande que la longitud solo saca el primer caracter
-print(cadena[0:4000:1])#po_fin > len llega solo hasta el final no da error
-print(cadena[4000:10:1]) #cadena vacia
+print(cadena[0:4:10000])#H la posición del salto es más grande que la longitud. Sólo saca el primer caracter.
+print(cadena[0:4000:1])#po_fin > len llega solo hasta el final no da error.
+print(cadena[4000:10:1]) #cadena vacía.
 
-#ojo en python los strings admiten posiciones negativas
+#ojo en python los strings admiten posiciones negativas.
 cadena = "Hola Mundo"
 print(cadena[0])
 print(cadena[-1]) #empieza por el final
 
-#Tambien se aplica con los slices
+#También se aplica con los slices
 cadena = "Hola Mundo"
 print(cadena[-1:-10:1]) #OJO cadena vacia no puedo ir de -1 a -10 sumando 1
-print(cadena[-1:-11:-1]) #STEPS negativos cuenta de atras hacia adelante (invierte la cadena)
+print(cadena[-1:-11:-1]) #STEPS negativos cuenta de atrás hacia adelante (invierte la cadena)
 print(cadena[-5:-11:-1]) #M aloH
-print(cadena[5:-1:-1]) #cadena vacia
+print(cadena[5:-1:-1]) #cadena vacía
 print(cadena[5:-1:1]) #Mund
+print(cadena[5:9:1])
 
 #Tambien tenemos funciones que se le pueden aplciar a los string
 #len() que nos devuelve la longtud de la cadena
