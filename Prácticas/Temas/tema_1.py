@@ -307,21 +307,21 @@ print(1 ** 2) #potencia
 print(1 % 2) #modulo, esto es el resto de la division entera
 print(1 // 2) #cociente de la division entera
 
-#Logicos, son los que operan con Booleanos
+#Lógicos, son los que operan con Booleanos
 # and, or y not
-#And solo es verdad si ambos operandos son verdad
+#And sólo es verdad si ambos operandos son verdad.
 print(False and False)
 print(False and True)
 print(True and False)
 print(True and True)
 
-#Or, es verdad si al menos uno de los operandos es verdad
+#Or, es verdad si al menos uno de los operandos es verdad.
 print(False or False)
 print(False or True)
 print(True or False)
 print(True or True)
 
-#Not, convierte verdadero en falso y al reves
+#Not, convierte verdadero en falso y al revés.
 print(not True)
 print(not False)
 
@@ -407,7 +407,7 @@ print(0 ^ 1) #1
 print(1 ^ 0) #1
 print(1 ^ 1) #0
 
-#Se usa para criptografia de clave simetrica
+#Se usa para criptografia de clave simétrica
 mensaje = 10
 clave = 5
 cifrado = mensaje ^ clave

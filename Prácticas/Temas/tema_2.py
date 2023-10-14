@@ -2,14 +2,14 @@
 #La mas basica es el if - elif - else
 
 variable = 10
-#los bloqeuse definen por la identacion
-if variable ==0:
+#los bloques se definen por la identación
+if variable == 0:
     print("La variable es cero")
 
 #Podemos tener varios elif, que son condiciones complementarias
 variable = 10
-#los bloqeuse definen por la identacion
-if variable ==0:
+#los bloques se definen por la identación
+if variable == 0:
     print("La variable es cero")
 elif variable == 9:
     print("la variable es nueve")
@@ -18,16 +18,16 @@ elif variable == 10:
 
 #Else
 variable = 10
-#los bloqeuse definen por la identacion
-if variable ==0:
+#los bloque se definen por la identación
+if variable == 0:
     print("La variable es cero")
 else:
     print("La variable no es cero")
 
 #Se puede combinar todo junto
 variable = 10
-#los bloqeuse definen por la identacion
-if variable ==0:
+#los bloques se definen por la identación
+if variable == 0:
     print("La variable es cero")
 elif variable == 9:
     print("la variable es nueve")
@@ -36,15 +36,15 @@ elif variable == 10:
 else:
     print("No se ha cumplido ninguna de las anteriores")
 
-#Pyhon admite notacion matematica para los rangos
-#queremos crear un if que imprima el numero que está en el rango de 0 a 10 si está la variable en ese rango
+#Pyhon admite notación matemática para los rangos
+#queremos crear un if que imprima el número que está en el rango de 0 a 10 si está la variable en ese rango.
 
 numero = 6
 
 if (numero >= 0 and numero <= 10):
     print("La variable esta dentro del rango 0 - 10")
 
-#Notacion matemica
+#Notación matemática
 numero = 6
 if(0 <= numero <= 10):
     print("La variable esta dentro del rango 0 - 10")
