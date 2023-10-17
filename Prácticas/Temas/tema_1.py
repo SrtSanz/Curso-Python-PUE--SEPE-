@@ -353,26 +353,26 @@ print(10 | 5)
 #05 = 0101
 # | = 1111 = 15
 
-# ~, es la negacion
+# ~, es la negación
 print(~0)
 print(~1)
 
-#El binario no se lleva muy alla con los negativos
+#El binario no se lleva muy allá con los negativos
 # Signo Magnitud
-# Al numero en positivo le agregamos un bit mas al principio que sera el bit de signo
+# Al número en positivo le agregamos un bit más al principio que será el bit de signo.
 # 0 => +
 # 1 => -
 # + 1 => 0001
 # - 1 => 1001
 #Dos problemas es una cuenta dificil para un PC
-#ademas tenemso 2 ceros
+#además tenemos 2 ceros
 # + 0 => 0 000
 # - 0 => 1 000
 # Complemento a uno
 # Negamos bit a bit
 # 1 =>        0001
 # -1 en C1 => 1110
-# Es ua cuenta rapida para ls PC, pero
+# Es ua cuenta rápida para ls PC, pero
 #seguimos teniendo dos ceros
 # + 0 => 0000
 # - 0 => 1111
@@ -383,7 +383,7 @@ print(~1)
 # - 1 => 1110
 #ahora le sumamos uno
 # -1 = 1111
-#Ventajas es rapido para un PC
+#Ventajas es rápido para un PC
 #Y ya no hay 2 ceros
 # + 0 = 0000
 # - 0 = 0000
@@ -407,7 +407,7 @@ print(0 ^ 1) #1
 print(1 ^ 0) #1
 print(1 ^ 1) #0
 
-#Se usa para criptografia de clave simétrica
+#Se usa para criptografía de clave simétrica
 mensaje = 10
 clave = 5
 cifrado = mensaje ^ clave
@@ -421,24 +421,24 @@ print(1 << 2)
 #1 << 2 => 0001 00 = 000100 = 4
 #se añaden ceros a la derecha
 
-#e añaden a la izquierda y perdemos tantas cifras significativas a la derecha como ceros añadimos por la izquierda
+#se añaden a la izquierda y perdemos tantas cifras significativas a la derecha como ceros añadimos por la izquierda
 print(1 >> 2)
 #1 = 0001
 #1 >> 2 => 0001 => 00 00 01 = 0000
 
 #Nos toca hablar de listas, tuplas, diccionarios y conjuntos
 #Listas
-# Las listas son un conjunto ordenado de elementos que admiten cualqueir tipo de dato
+# Las listas son un conjunto ordenado de elementos que admiten cualquier tipo de dato
 #en python y son MUTABLES
-#para declrar las listas usamos []
+#para declarar las listas usamos []
 lista = [1,2,3,4]
 print(type(lista))
 print(lista)
-#NO tiene por que ser homogeneas
+#NO tiene por que ser homogéneas
 lista = [1,2,3,4,"hola",3.5,1 + 5j]
 print(type(lista))
 print(lista)
-#Podemos acceder a los elementos por posicion igual que en los string
+#Podemos acceder a los elementos por posición igual que en los string.
 lista = [1,2,3,4]
 print(lista[0])
 print(lista[2])
@@ -450,21 +450,22 @@ lista[0]= "Hola"
 print(lista)
 
 #para ñadir nuevos
-# append() que añade al final
+# append() que añade al final.
 lista = [1,2,3,4]
 lista.append("Hola")
 print(lista)
-#insert() que admite dos parametros uno es la posicion de insercion y el otro el objeto a insertar
+#insert() que admite dos parámetros, uno es la posición de inserción y el otro el objeto a insertar.
 lista = [1,2,3,4]
 lista.insert(2,"Hola")
 print(lista)
 
 #Borrar
-#operador del e iriamos por posicion
+#operador del que iríamos por posición.
 lista = [1,2,3,4]
 del lista[0]
 print(lista)
-#El metodo reove que elimina por valor y solo la primera ocurrencia
+
+#El método remove elimina por valor y sólo la primera ocurrencia.
 lista = [1,2,3,4]
 lista.remove(4)
 print(lista)
