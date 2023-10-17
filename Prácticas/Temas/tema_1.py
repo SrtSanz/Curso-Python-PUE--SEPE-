@@ -470,53 +470,56 @@ lista = [1,2,3,4]
 lista.remove(4)
 print(lista)
 
-#Podemos aplicarle el operador in para saber si un elemento existe
+#Podemos aplicarle el operador in para saber si un elemento existe.
 lista = [1,2,3,4]
 print(2 in lista)
 print("hola" in lista)
 
-#tenemos metodos y funciones que se le aplican
-# len(), devuelve la longitud
+#Tenemos métodos y funciones que se le aplican
+# len() y nos devuelve la longitud de la lista.
 lista = [1,2,3,4]
 print(len(lista))
 
-#tenemos funciones que solo funcionan con listas numericas
-#max(), maximo
-#min(), minimo
+#También hay funciones que sólo funcionan con listas numericas como:
+#max(), máximo
+#min(), mínimo
 #sum(), suma de los elementos
 lista = [1,2,3,4]
 print(max(lista))
 print(min(lista))
 print(sum(lista))
 
-#Tenemos un metodo en string que devuelve una lista, split(), que devuelve una lista
-#con los elementos diferenciados que obtine a partir del caracter de particion que recibe como argumento
+#Tenemos un método en string, split(), que devuelve una lista con los elementos diferenciados
+# que obtine a partir del caracter de partición que recibe como argumento.
 fecha = "12/02/2023"
 partes = fecha.split("/")
 print(partes)
 
-#Tenemos la inversa que es join() que une los elementos de una lista de strings a un unico string
+#Tenemos la inversa que es join() que une los elementos de una lista de strings a un único string.
 lista = ["hola","adios","que"]
 unidos = "PEGAMENTO".join(lista)
 print(unidos)
 
-#Podemos ordenar listas numericas y de cadenas
-#sort() pr defecto de menor a mayor, se puede alterar pasandole un argumento ord
+#Podemos ordenar listas numéricas y de cadenas con sort() por defecto de menor a mayor. 
+# Se puede alterar pasándole un argumento ord.
 lista = [1,22,3,42,-1,3]
 lista.sort()
 print(lista)
+
 #Funciona y ordena en base a la tabla ascii (numeros/MAYUSCULAS/MINUSCULAS)
-lista = ["z","a","f","c"]
+lista = ["z","a","f","c", "1", "A"]
 lista.sort()
 print(lista)
+
 #Podemos invertir
 lista = [1,2,3,45,6]
 lista.reverse()
 print(lista)
-#quivale al slice
+
+#equivale al slice
 print(lista[::-1])
 
-#podemos limpiar la lista, es decir vaciarla de todos sus elementos
+#podemos limpiar la lista, es decir vaciar la de todos sus elementos.
 lista = [1,2,3,4]
 lista.clear()
 print(lista)
@@ -526,38 +529,38 @@ del lista
 
 #Tuplas
 #Son lo mismo que una lista pero en INMUTABLE
-#es ecir tienen todos los metodos y funciones menos las que modifiquen sus valores
-#se definen con ()
+#es decir tienen todos los métodos y funciones menos las que modifiquen sus valores y se definen con ()
 tupla = (1,2,3,4)
 print(type(tupla))
 print(tupla)
 
 #Diccionarios
-# Los diccionarios son estructuras de datos compuestos por conjuntos de pares clave:valor
-#los diccionarios NO tienen orden, son MUTABLES y las claves no se pueden repetir
+# Los diccionarios son estructuras de datos compuestos por conjuntos de pares clave:valor.
+#Los diccionarios NO tienen orden, son MUTABLES y las claves no se pueden repetir
 #se definen usando {}
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(type(diccionario))
 print(diccionario)
 
-#Para accder a los valores hay 2 formas
-#a través de la clave, las claves pueden ser strings, numeros o cualquier objteo en python que sea serializable es decir que se pueda convertir en un string
+#Para accder a los valores hay 2 formas:
+#A través de la clave. Las claves pueden ser strings, números o cualquier objeto en python que sea serializable,
+# es decir, que se pueda convertir en un string.
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario["nombre"])
 
 diccionario = {0:"cero", 1000:23232323}
 print(diccionario[1000])
 
-#la otra opcion de acceder es el metodo get
+#La otra opción de acceder es el método get.
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario.get("nombre"))
 
-#La diferencia es si no existe la clave
+#La diferencia es si no existe la clave.
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario["pais"]) #Error
 print(diccionario.get("pais")) #None por defecto
 
-#y el get podemos personalizar que quieres que devuelva en luagr del None con el segundo argumento
+#y el get podemos personalizar que quieres que devuelva en lugar del None con el segundo argumento.
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 defecto = "LA CLAVE NO EXISTE"
 print(diccionario.get("pais", defecto))
@@ -565,11 +568,11 @@ print(diccionario.get("pais", defecto))
 #Para eso hacemos una lista de diccionarios
 personas = [{"nombre":"Jane","apellido":"Doe"}, {"nombre":"James","apellido":"Bond"}]
 
-#Modificar valores y añadir es igual, la diferencia si la clave existe o no
-#si la clave ya existe sobrescribimos el valor
+#Modificar valores y añadir es igual, la diferencia está en si la clave existe o no.
+#Si la clave ya existe sobrescribimos el valor,
 #en caso contrario, crea
 #Modificar
-diccionario = {"nombre":"Jane","apellido":"Doe"}
+diccionario = {"nombre":" ","apellido":"Doe"}
 diccionario["nombre"] = "PACO"
 print(diccionario)
 
@@ -605,7 +608,7 @@ print("nombre" in diccionario)
 #keys() devuelve un iterable con las claves
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario.keys())
-#values() devuele un iterable con los valroes
+#values() devuelve un iterable con los valores
 diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario.values())
 #items() devuelve los pares valor como tuplas
@@ -613,8 +616,8 @@ diccionario = {"nombre":"Jane","apellido":"Doe"}
 print(diccionario.items())
 
 #Conjuntos
-# Una serie de elementos, no reptidos que no tienen orden y son mutables
-#se definen con {}
+# Son una serie de elementos, no repetidos que no tienen orden y son mutables.
+#Se definen con {}.
 conjunto = set()
 print(type(conjunto))
 print(conjunto)
@@ -624,7 +627,7 @@ print(type(conjunto))
 print(conjunto)
 
 #Pero tienen el álgebra de conjuntos implementada
-automoviles = {"BMW", "SEAT", "AUDI"}
+automoviles = {"BMW", "SEAT", "AUDI", "JAGUAR"}
 motos = {"BMW","HONDA","KAWA"}
 
 print(automoviles & motos) # intersección
